@@ -8,7 +8,7 @@ THE BEST SPAM BOT FOR TELEGRAM.....20+ BOT DEPLOYS AT A TIME...... ENJOY .......
 
 ### ˜”*°•𝓓𝓔𝓟𝓛𝓞𝓨 𝓣𝓞 𝓗𝓔𝓡𝓞𝓚𝓤•°*”˜</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fvincenzo-op%2FVINCENZO_MULTI_SPAM_BOT)
 
 
 ## STRING SESSION GENERATOR</h4>
