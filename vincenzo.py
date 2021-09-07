@@ -834,7 +834,7 @@ async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in SMEX_USERS:
        vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 5:
+        if len(e.text) > 7:
             bc = vincenzo[0]
             text = "cheking entry..."
             event = await e.reply(text, parse_mode=None, link_preview=None )
