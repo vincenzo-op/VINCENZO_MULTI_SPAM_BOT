@@ -793,7 +793,7 @@ async def _(e):
     if e.sender_id in SMEX_USERS:
         vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
-            bio = str(vincenzo[0])
+            bio = vincenzo[0]
             text = "Changing Bio"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
