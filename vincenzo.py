@@ -1013,7 +1013,7 @@ async def spam(e):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         smex = await e.get_reply_message()
-        if len(vincenzo)
+        if len(vincenzo) == 2:
             message = str(vincenzo[1])
             counter = int(vincenzo[0])
             if counter > 100:
