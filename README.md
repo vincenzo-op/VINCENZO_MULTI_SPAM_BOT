@@ -14,6 +14,9 @@ Use [@StringSessionGeneratorRobot](https://t.me/StringSessionGeneratorRobot) to 
 
 ## STRING SESSION GENERATOR</h4>
 
+Generate on Repl [![Run on Repl.it](https://repl.it/badge/github/vincenzo-op/VINCENZO_MULTI_SPAM_BOT)](https://replit.com/@vincenzo-op/VINCENZOMULTISPAMBOT?V=1)
+
+
 # 🖤 ᴄʀᴇᴀᴛᴏʀ 🖤
 [![telegram badge](https://img.shields.io/badge/Vincenzo-30302f?style=for-the-badge&logo=telegram)](https://t.me/koii_nhi_apnaa)
 
