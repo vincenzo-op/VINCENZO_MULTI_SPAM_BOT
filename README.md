@@ -10,7 +10,6 @@ THE BEST SPAM BOT FOR TELEGRAM.....20+ BOT DEPLOYS AT A TIME...... ENJOY .......
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT)
 
-Use [@StringSessionGeneratorRobot](https://t.me/StringSessionGeneratorRobot) to get program string session
 
 ## STRING SESSION GENERATOR</h4>
 
@@ -26,6 +25,9 @@ Use [@StringSessionGeneratorRobot](https://t.me/StringSessionGeneratorRobot) to 
 
 
 
+IF ANY PROBLEM OCCURS THEN CONTACT @VINCENZO(https://t.me/@koii_nhi_apnaa)
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                          ...............THANKS FOR DEPLOYING.............
+                                             ...............THANKS FOR DEPLOYING.............
+ 
