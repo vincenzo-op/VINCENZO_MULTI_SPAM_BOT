@@ -761,49 +761,7 @@ async def gifspam(e, smex):
         pass
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-
-async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
-    if e.sender_id in SMEX_USERS:
-        vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
-        if len(e.text) > 5:
-            bio = vincenzo[0]
-            text = "Changing Bio"
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By vincenzo spam bot..")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
-                                                                
+                                                          
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
@@ -1565,7 +1523,7 @@ async def alive(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
