@@ -1358,8 +1358,8 @@ async def _(e):
 
 async def _(e):
     global que
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝕀𝕋𝕊 𝕋𝕀𝕄𝔼 𝕋𝕆 𝔽𝕆ℝ𝔾𝕀𝕍𝔼 𝕐𝕆𝕌..𝔻𝕆ℕ𝕋 𝕄𝔼𝕊𝕊 𝕌ℙ 𝔸𝔾𝔸𝕀ℕ\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
-      if e.sender_id in SMEX_USERS:
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
+    if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -1373,7 +1373,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "𝕀𝕋𝕊 𝕋𝕀𝕄𝔼 𝕋𝕆 𝔽𝕆ℝ𝔾𝕀𝕍𝔼 𝕐𝕆𝕌..𝔻𝕆ℕ𝕋 𝕄𝔼𝕊𝕊 𝕌ℙ 𝔸𝔾𝔸𝕀ℕ..."
+            text = "De-Activated Reply Raid"
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -1384,7 +1384,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "𝕀𝕋𝕊 𝕋𝕀𝕄𝔼 𝕋𝕆 𝔽𝕆ℝ𝔾𝕀𝕍𝔼 𝕐𝕆𝕌..𝔻𝕆ℕ𝕋 𝕄𝔼𝕊𝕊 𝕌ℙ 𝔸𝔾𝔸𝕀ℕ"
+            text = "De-Activated Reply Raid"
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
