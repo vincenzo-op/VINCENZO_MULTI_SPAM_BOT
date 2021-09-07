@@ -25,7 +25,7 @@ THE BEST SPAM BOT FOR TELEGRAM.....20+ BOT DEPLOYS AT A TIME...... ENJOY .......
 
 
 
-IF ANY PROBLEM OCCURS THEN CONTACT @VINCENZO(https://t.me/@koii_nhi_apnaa)
+IF ANY PROBLEM OCCURS THEN CONTACT [VINCENZO](https://t.me/@koii_nhi_apnaa)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
