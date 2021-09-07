@@ -1,16 +1,16 @@
 {
   "name": "VINCENZO MULTI SPAM BOT",
-  "description": "Telegram Fast And Stable Spam Bot By @koii_nhi_apnaa",
+  "description": "Telegram's Best and Effortive Multi Spam Bot By @koii_nhi_apnaa",
   "logo": "https://telegra.ph/file/744ec1f5f15768fd3cc0b.jpg",
     "env": {
      "API_ID": {
         "description": "Api ID",
-        "value": "4014305",
+        "value": "7491754",
         "required": true
       },
       "API_HASH": {
         "description": "Api Hash",
-        "value": "b0cb9e17b2b8bcde3be7161c8bfa6013",
+        "value": "bb7083e5ad5bd5d14e43b666a68c2604",
         "required": true
       },
       "SUDO": {
