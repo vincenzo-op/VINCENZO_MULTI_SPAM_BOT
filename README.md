@@ -17,6 +17,6 @@ Use [@StringSessionGeneratorRobot](https://t.me/StringSessionGeneratorRobot) to 
 
 ## Telegram 🏪
 - [![Telegram Group](https://img.shields.io/badge/Telegram-Group-brightgreen)](https://t.me/hamaari_paltan)
-- [![Telegram Group2](https://img.shields.io/badge/Telegram-Channel-brightgreen)](https://t.me/our_SECRET_SOCIETY)
+- [![Telegram Group2](https://img.shields.io/badge/Telegram-Group-brightyellow)](https://t.me/our_SECRET_SOCIETY)
 
 ------
