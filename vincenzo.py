@@ -909,7 +909,7 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
             
 
-VINCENZO_PIC = "https://telegra.ph/file/744ec1f5f15768fd3cc0b.jpg"
+VINCENZO_PIC = "https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
@@ -1486,7 +1486,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"🇵 🇴 🇳 🇬 !\n`{ms}` ????\n ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ⎝╰‿╯⎠ ")
+        await event.edit(f"🇵 🇴 🇳 🇬 !\n`{ms}` 🔰🔰\n ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ⎝╰‿╯⎠ ")
 
 
     
