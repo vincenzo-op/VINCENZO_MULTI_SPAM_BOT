@@ -44,31 +44,31 @@ tfour = STRING24
 tfive = STRING25
 
 
-idk = ""
-ydk = ""
-wdk = ""
-sdk = ""
-hdk = ""
-adk = ""
-bdk = ""
-cdk = ""
-edk = ""
-ddk = ""
-vkk = ""
-kkk = ""
-lkk = ""
-mkk = ""
-sid = ""
-shy = ""
-aan = ""
-ake = ""
-eel = ""
-khu = ""
-shi = ""
-yaa = ""
-dav = ""
-raj = ""
-put = ""
+i = ""
+a = ""
+m = ""
+v = ""
+i = ""
+n = ""
+c = ""
+e = ""
+n = ""
+z = ""
+o = ""
+f = ""
+u = ""
+c = ""
+K = ""
+l = ""
+o = ""
+l = ""
+s = ""
+e = ""
+d = ""
+b = ""
+r = ""
+u = ""
+h = ""
 
 
 que = {}
@@ -78,31 +78,31 @@ for x in SUDO:
     SMEX_USERS.append(x)
     
 async def start_rizoel():
-    global idk
-    global ydk
-    global wdk
-    global sdk
-    global hdk
-    global adk
-    global bdk
-    global cdk
-    global ddk
-    global edk
-    global vkk
-    global kkk
-    global lkk
-    global mkk
-    global sid
-    global shy
-    global aan
-    global ake
-    global eel
-    global khu
-    global shi
-    global yaa
-    global dav
-    global raj
-    global put
+    global i
+    global a
+    global m
+    global v
+    global i
+    global n
+    global c
+    global e
+    global n
+    global z
+    global o
+    global f
+    global u
+    global c
+    global k
+    global l
+    global o
+    global l
+    global s
+    global e
+    global d
+    global b
+    global r
+    global u
+    global h
     
     if smex:
         session_name = str(smex)
@@ -786,31 +786,31 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
                                                           
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.join")) 
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.join")) 
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.join")) 
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.join")) 
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.join")) 
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@i(events.NewMessage(incoming=True, pattern=r"\.join"))
+@a(events.NewMessage(incoming=True, pattern=r"\.join"))
+@m(events.NewMessage(incoming=True, pattern=r"\.join"))
+@v(events.NewMessage(incoming=True, pattern=r"\.join"))
+@i(events.NewMessage(incoming=True, pattern=r"\.join"))
+@n(events.NewMessage(incoming=True, pattern=r"\.join"))
+@c(events.NewMessage(incoming=True, pattern=r"\.join"))
+@e(events.NewMessage(incoming=True, pattern=r"\.join"))
+@n(events.NewMessage(incoming=True, pattern=r"\.join"))
+@z(events.NewMessage(incoming=True, pattern=r"\.join")) 
+@o(events.NewMessage(incoming=True, pattern=r"\.join")) 
+@f(events.NewMessage(incoming=True, pattern=r"\.join")) 
+@u(events.NewMessage(incoming=True, pattern=r"\.join")) 
+@c(events.NewMessage(incoming=True, pattern=r"\.join")) 
+@k(events.NewMessage(incoming=True, pattern=r"\.join"))
+@l(events.NewMessage(incoming=True, pattern=r"\.join"))
+@o(events.NewMessage(incoming=True, pattern=r"\.join"))
+@l(events.NewMessage(incoming=True, pattern=r"\.join"))
+@s(events.NewMessage(incoming=True, pattern=r"\.join"))
+@e(events.NewMessage(incoming=True, pattern=r"\.join"))
+@d(events.NewMessage(incoming=True, pattern=r"\.join"))
+@b(events.NewMessage(incoming=True, pattern=r"\.join"))
+@r(events.NewMessage(incoming=True, pattern=r"\.join"))
+@u(events.NewMessage(incoming=True, pattern=r"\.join"))
+@h(events.NewMessage(incoming=True, pattern=r"\.join"))
 
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
@@ -828,31 +828,31 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
             
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.pjoin")) 
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@i(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@a(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@m(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@v(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@i(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@n(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@c(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@e(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@n(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@z(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@o(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@f(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@u(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@c(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@k(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@l(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@o(events.NewMessage(incoming=True, pattern=r"\.pjoin")) 
+@l(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@s(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@e(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@d(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@b(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@r(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@u(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@h(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 
 
 
