@@ -873,7 +873,7 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
             
         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
+@i(events.NewMessage(incoming=True, pattern=r"\.pleave"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.pleave"))
@@ -917,7 +917,7 @@ async def _(e):
             
                 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@i(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
@@ -962,7 +962,7 @@ async def _(e):
 
         
         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@i(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
@@ -1018,7 +1018,7 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
             
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
+@i(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
@@ -1083,7 +1083,7 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@i(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
@@ -1144,7 +1144,7 @@ async def spam(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@i(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
@@ -1211,7 +1211,7 @@ async def spam(e):
 
 
 
-@idk.on(events.NewMessage(incoming=True))
+@i(events.NewMessage(incoming=True))
 @ydk.on(events.NewMessage(incoming=True))
 @wdk.on(events.NewMessage(incoming=True))
 @hdk.on(events.NewMessage(incoming=True))
@@ -1253,7 +1253,7 @@ async def _(event):
         )           
             
             
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
+@i(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.replyraid"))
@@ -1312,7 +1312,7 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
 
             
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
+@i(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.dreplyraid"))
@@ -1372,7 +1372,7 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
     
    
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@i(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
@@ -1412,7 +1412,7 @@ async def ping(e):
         
         
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@i(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -1442,7 +1442,7 @@ async def restart(e):
         text = "ᴿᴱˢᵀᴬᴿᵀᴱᴰ ˢᵁᶜᶜᴱˢˢᶠᵁᴸᴸʸ\n\nPlease wait for 2-3 minutes..."
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
-            await idk.disconnect()
+            await i.disconnect()
         except Exception as e:
             pass
         try:
@@ -1488,7 +1488,7 @@ async def restart(e):
         
         
         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@i(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
@@ -1519,7 +1519,7 @@ async def alive(e):
         await e.reply(text, parse_mode=None, link_preview=None )
 
                         
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@i(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
@@ -1561,11 +1561,11 @@ text = """
 |___/_/_/ /_/\___/\___/_/ /_/ /___/\____/ """
 
 print(text)
-print("")
+print("........................")
 print("LETS GO... BOT IS NOW ACTIVE...ENJOY")
 if len(sys.argv) not in (1, 3, 4):
     try:
-        idk.disconnect()
+        i.disconnect()
     except Exception as e:
         pass
     try:
@@ -1666,7 +1666,7 @@ if len(sys.argv) not in (1, 3, 4):
         pass
 else:
     try:
-        idk.run_until_disconnected()
+        i.run_until_disconnected()
     except Exception as e:
         pass
     try:
