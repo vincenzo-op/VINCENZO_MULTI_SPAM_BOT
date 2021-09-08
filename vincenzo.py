@@ -77,7 +77,7 @@ SMEX_USERS = []
 for x in SUDO: 
     SMEX_USERS.append(x)
     
-async def start_rizoel():
+async def start_vincenzo():
     global i
     global a
     global m
@@ -107,27 +107,27 @@ async def start_rizoel():
     if smex:
         session_name = str(smex)
         print("String 1 Found")
-        idk = TelegramClient(StringSession(session_name), a, b)
+        i = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 1")
-            await idk.start()
-            botme = await idk.get_me()
-            await idk(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
-            await idk(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
-            await idk(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
-            await idk(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
+            await i.start()
+            botme = await i.get_me()
+            await i(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
+            await i(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
+            await i(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
+            await i(functions.channels.JoinChannelRequest(channel="@koii_nhi_apnaa"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
-            idk = "smex"
+            i = "smex"
             print(e)
             pass
     else:
         print("Session 1 not Found")
         session_name = "startup"
-        idk = TelegramClient(session_name, a, b)
+        i = TelegramClient(session_name, a, b)
         try:
-            await idk.start()
+            await i.start()
         except Exception as e:
             pass
    
@@ -743,7 +743,7 @@ async def start_rizoel():
    
    
 loop = asyncio.get_event_loop()
-loop.run_until_complete(start_rizoel())       
+loop.run_until_complete(start_vincenzo())       
 
 async def gifspam(e, smex):
     try:
