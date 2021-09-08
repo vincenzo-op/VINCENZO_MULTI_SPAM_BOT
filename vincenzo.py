@@ -79,7 +79,7 @@ SMEX_USERS = []
 for x in SUDO: 
     SMEX_USERS.append(x)
     
-async def start_vincen():
+async def start_vincenzo():
     global idk
     global ydk
     global wdk
@@ -773,7 +773,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By MULTI SPAMBOT")
+                await event.edit("Succesfully Changed Bio By VINCENZO MULTI SPAMBOT")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1604,20 +1604,20 @@ async def get_users(event):
         try:
             if error.startswith("Too"):
                 return await rkp.edit(
-                    f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
+                    f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\nÂ• Invited `{s}` people \nÂ• Failed to Invite `{f}` people"
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
             )
             s = s + 1
             await rkp.edit(
-                f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
+                f"**Terminal Running...**\n\nÂ• Invited `{s}` people \nÂ• Failed to Invite `{f}` people\n\n**Ã— LastError:** `{error}`"
             )
         except Exception as e:
             error = str(e)
             f = f + 1
     return await rkp.edit(
-        f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
+        f"**Terminal Finished** \n\nÂ• Successfully Invited `{s}` people \nÂ• failed to invite `{f}` people"
     )        
 
 # _______
