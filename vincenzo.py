@@ -763,7 +763,7 @@ async def gifspam(e, smex):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 
 async def _(e):
-    usage = "???????????? ???????? = ??????\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
+    usage = "SET YOUR OWN BIO MESSAGE...\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in SMEX_USERS:
         vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
@@ -805,7 +805,7 @@ async def _(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 
 async def _(e):
-    usage = "???????????? ???????? = ????????\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
+    usage = "JOINS A PUBLIC GROUP OR CHANNEL...\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in SMEX_USERS:
         vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
@@ -849,7 +849,7 @@ async def _(e):
 
 
 async def _(e):
-    usage = "???????????? ???????? = ?????????????? ????????\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
+    usage = "JOINS A PRIVATE GROUP...\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in SMEX_USERS:
         vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
@@ -892,7 +892,7 @@ async def _(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
 
 async def _(e):
-    usage = "???????????? ???????? = ??????????\n\nCommand:\n\n.leave <Channel or Chat ID>"
+    usage = "LEAVES THE SUGGESTED CHAT..\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
         vincenzo = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
@@ -1068,7 +1068,7 @@ async def start(event):
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
-    usage = "???????????? ???????? = ????????\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
+    usage = "ACTIVATES SPAM...\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -1125,7 +1125,7 @@ async def spam(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
 
 async def spam(e):
-    usage = "???????????? ???????? = ??????????????????\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
+    usage = "SPAM EXECUTED AFTER GIVEN INTERVAL\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1190,7 +1190,7 @@ async def spam(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 
 async def spam(e):
-    usage = "???????????? ???????? = ??????????????\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
+    usage = "SPAM COMMAND FOR MORE THAN 100 MESSAGES\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1251,7 +1251,7 @@ async def spam(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 
 async def spam(e):
-    usage = "???????????? ???????? = ????????\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
+    usage = "STARTS ABUSE....\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1362,7 +1362,7 @@ async def _(event):
 
 async def _(e):
     global que
-    usage = "???????????? ???????? = ??????????????????\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
+    usage = "**ACTIVATES REPLY RAID**\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1420,7 +1420,7 @@ async def _(e):
 
 async def _(e):
     global que
-    usage = "???????????? ???????? = ???????????????????? ??????????????????\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
+    usage = "DE-ACTIVATES REPLY RAID\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1482,11 +1482,11 @@ async def _(e):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "????NC??NZ?? ?????????? ??P???? ??????!"
+        text = "ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ⎝╰‿╯⎠"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"?? ????????????!\n`{ms}` ????")
+        await event.edit(f"🇵 🇴 🇳 🇬 !\n`{ms}` ????")
 
 
     
@@ -1648,7 +1648,7 @@ async def get_users(event):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "??????????????????\n\nPlease wait till it reboots..."
+        text = "sucessfully restarted....\n\nPlease wait till it reboots..."
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await idk.disconnect()
@@ -1726,7 +1726,7 @@ async def restart(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "?????????????????? ????????????????\n\n?????????? ??????????????:\n.ping\n.restart\n\n?????????????? ??????????????:\n.inviteall\n.bio\n.join\n.pjoin\n.leave\n\n???????? ??????????????:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = " **welcome to the bot help menu**\n\n __BASIC COMMANDS__:\n.ping\n.restart\n\n__USER COMMANDS__:\n.bio\n.join\n.pjoin\n.leave\n\n__SPAM COMMANDS__:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
