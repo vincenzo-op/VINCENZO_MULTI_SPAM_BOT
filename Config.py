@@ -3,9 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_HASH = getenv("API_HASH")
-API_ID = getenv("API_ID")
-BIO_MESSAGE = getenv("BIO")
 STRING = getenv("STRING")
 STRING2 = getenv("STRING2")
 STRING3 = getenv("STRING3")
@@ -31,4 +28,7 @@ STRING22 = getenv("STRING22")
 STRING23 = getenv("STRING23")
 STRING24 = getenv("STRING24")
 STRING25 = getenv("STRING25")
+API_HASH = getenv("API_HASH")
+API_ID = getenv("API_ID")
+BIO_MESSAGE = getenv("BIO")
 SUDO = list(map(int, getenv("SUDO").split()))
