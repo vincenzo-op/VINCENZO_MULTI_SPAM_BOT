@@ -1487,7 +1487,60 @@ async def ping(e):
         end = datetime.now()
         ms = (end-start).microseconds / 1000
         await event.edit(f"🇵 🇴 🇳 🇬 !\n`{ms}` 🔰🔰\n ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ⎝╰‿╯⎠ "
+###
+##                         ###
+from telethon.errors import (
+    ChannelInvalidError,
+    ChannelPrivateError,
+    ChannelPublicGroupNaError,
+)
+from telethon.tl import functions
+from telethon.tl.functions.channels import GetFullChannelRequest
+from telethon.tl.functions.messages import GetFullChatRequest
 
+async def get_chatinfo(event):
+    chat = event.text[10:]
+    chat_info = None
+    if chat:
+        try:
+            chat = int(chat)
+        except ValueError:
+            pass
+    if not chat:
+        if event.reply_to_msg_id:
+            replied_msg = await event.get_reply_message()
+            if replied_msg.fwd_from and replied_msg.fwd_from.channel_id is not None:
+                chat = replied_msg.fwd_from.channel_id
+        else:
+            chat = event.chat_id
+    try:
+        chat_info = await event.client(GetFullChatRequest(chat))
+    except:
+        try:
+            chat_info = await event.client(GetFullChannelRequest(chat))
+        except ChannelInvalidError:
+            await event.reply("`Invalid channel/group`")
+            return None
+        except ChannelPrivateError:
+            await event.reply(
+                "`This is a private channel/group or I am banned from there`"
+            )
+            return None
+        except ChannelPublicGroupNaError:
+            await event.reply("`Channel or supergroup doesn't exist`")
+            return None
+        except (TypeError, ValueError):
+            await event.reply("`Invalid channel/group`")
+            return None
+    return chat_info
+
+
+def user_full_name(user):
+    names = [user.first_name, user.last_name]
+    names = [i for i in list(names) if i]
+    full_name = " ".join(names)
+    return full_name
+                         
             
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
@@ -1514,51 +1567,51 @@ async def ping(e):
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+
 async def get_users(event):
   sender = await event.get_sender()
-  sed = await event.client.get_me()
+  me = await event.client.get_me()
   if event.sender_id in SMEX_USERS:
     lo_l = event.text[10:]
-    vincen = await event.reply("`Processing.....`")
+    vincenzo = await event.reply("`Processing.....`")
     if not lo_l:
-        return await vincen.edit("Give Channel")
+        return await vincenzo.edit("Give Channel")
     if lo_l == "@our_SECRET_SOCIETY":
-        return await vincen.edit("Restricted to invite users from there.")
+        return await hell.edit("Restricted to invite users from there.")
     elif lo_l == "@our_SECRET_SOCIETY":
-        return await vincen.edit("Restricted to invite users from there.")
+        return await vincenzo.edit("Restricted to invite users from there.")
     elif lo_l == "@our_SECRET_SOCIETY":
-        return await vincen.edit("Restricted to invite users from there.")
-    pro = await get_chatinfo(event)
+        return await vincenzo.edit("Restricted to invite users from there.")
+    phuck = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
-        return await vincen.edit("`Sorry, Cant add users here`")
+        return await vincenzo.edit("`Sorry, Cant add users here`")
     s = 0
     f = 0
     error = "None"
 
-    await vincen.edit("**INVITING USERS !!**")
-    async for user in event.client.iter_participants(pro.full_chat.id):
+    await vincenzo.edit("**INVITING USERS !!**")
+    async for user in event.client.iter_participants(phuck.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await vincen.edit(
+                return await vincenzo.edit(
                     f"**INVITING FINISHED !**\n\n**Error :** \n`{error}`\n\n**Invited :**  `{s}` users. \n**Failed to Invite :** `{f}` users."
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
             )
             s = s + 1
-            await vincen.edit(
+            await vincenzo.edit(
                 f"**INVITING USERS.. **\n\n**Invited :**  `{s}` users \n**Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
             )
         except Exception as e:
             error = str(e)
             f = f + 1
-    return await vincen.edit(
+    return await hell.edit(
         f"**INVITING FINISHED** \n\n**Invited :**  `{s}` users \n**Failed :**  `{f}` users."
     )
   else:
-   return await event.reply("`fuck..bro..dont.scrap`")
-
+   return await event.reply("`phuck....dont scrap too much...`")
 # _______
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
