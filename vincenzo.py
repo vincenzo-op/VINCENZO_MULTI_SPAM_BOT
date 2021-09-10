@@ -949,7 +949,11 @@ async def alive(event):
     k = sed.id
     s = f"[{kk}](tg://user?id={k})"
     tf = f"""
-**{s} editing here
+**꧁{s}꧂ ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ...
+ʀᴇᴘᴏ:- https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT
+
+ᴛʏᴘᴇ `.help` ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ..
+................. ⎝╰‿╯⎠ ...................
 """
     await event.client.send_file(event.chat_id,vincenzo,caption=tf, force_document=False, link_preview=False)
 import time
@@ -1639,8 +1643,7 @@ async def help(e):
 
     
         
-text = """
-CONGRATULATIONS UR VINCENZO MULTI SPAM BOT IS READY🔰🔰🔰......CONTACT- @koii_nhi_apnaa in TELEGRAM FOR HELP...."""
+text = """🇧 🇴 🇹   🇩 🇪 🇵 🇱 🇴 🇾 🇪 🇩   🇸 🇺 🇨 🇨 🇪 🇸 🇸 🇫 🇺 🇱 🇱 🇾 🔰🔰🔰......C༙O༙N༙T༙A༙C༙T༙- @koii_nhi_apnaa I͒N͒ T͒G͒ F͒O͒R͒ H͒E͒L͒P͒...."""
 
 print(text)
 print("")
