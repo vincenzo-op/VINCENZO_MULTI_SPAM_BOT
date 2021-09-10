@@ -909,7 +909,11 @@ async def _(e):
             await e.reply(usage, parse_mode=None, link_preview=None )
             
 
-VINCENZO_PIC = "https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+ALIVE_PIC = "https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
+import os
+vincenzo = os.environ.get("ALIVE_PIC",None)
+if not vincenzo:
+ vincenzo="https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
@@ -936,112 +940,21 @@ VINCENZO_PIC = "https://telegra.ph/file/ce42f11189d500ff8ded9.mp4"
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-async def start(event):
-    if event.sender_id in SMEX_USERS:
-     await idk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await ydk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await wdk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await hdk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await sdk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"
-                              )
-     await adk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await bdk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"
-                              )
-     await cdk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"
-                              )
-     await edk.send_file(event.chat_id,
-                                VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await hdk.send_file(event.chat_id,
-                              VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await ddk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await vkk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await kkk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await lkk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await mkk.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await sid.send_file(event.chat_id,
-                                 VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await shy.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await aan.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await ake.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await eel.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await khu.send_file(event.chat_id,
-                                 VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await shi.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await yaa.send_file(event.chat_id,
-                                 VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await dav.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await raj.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )
-     await put.send_file(event.chat_id,
-                                  VINCENZO_PIC,
-                                  caption="╭──────────────\n┣─ **__HEY THERE...__**\n┣─ **__VINCENZO MULTI SPAM BOT IS ALIVE🎉🎉__**\n╰──────────────\n"                                
-                              )        
+
+####
+async def alive(event):
+  if event.sender_id in SMEX_USERS:
+    sed = await event.client.get_me()
+    kk = sed.first_name
+    k = sed.id
+    s = f"[{kk}](tg://user?id={k})"
+    tf = f"""
+**{s} editing here
+"""
+    await event.client.send_file(event.chat_id,vincenzo,caption=tf, force_document=False, link_preview=False)
+import time
+from time import sleep
+  
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
