@@ -13,8 +13,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID, RRAID
-import git
-import heroku3
+
 
 
 
@@ -1465,7 +1464,7 @@ async def ping(e):
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))                                                      
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @adk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @bdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @cdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -1488,7 +1487,7 @@ async def ping(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "**RESTARTED SUCCESSFULLY**\n\nPlease wait till it reboots..."
+        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await idk.disconnect()
@@ -1532,12 +1531,8 @@ async def restart(e):
             pass
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
-
         
-        
-        
-        
-        
+ ###___-----     
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
