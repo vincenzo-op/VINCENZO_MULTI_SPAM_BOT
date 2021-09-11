@@ -1437,7 +1437,6 @@ async def ping(e):
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-
 async def get_users(event):
   sender = await event.get_sender()
   me = await event.client.get_me()
