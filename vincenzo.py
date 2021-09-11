@@ -1409,11 +1409,9 @@ async def ping(e):
 ###
 ##                         ###
 
-from telethon.errors import (
-    ChannelInvalidError,
-    ChannelPrivateError,
-    ChannelPublicGroupNaError,
-)
+from telethon.errors import ChannelInvalidError
+from telethon.errors import ChannelPrivateError
+from telethon.errors import ChannelPublicGroupNaError
 from telethon.tl import functions
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest
