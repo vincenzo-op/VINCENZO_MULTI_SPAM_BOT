@@ -1531,6 +1531,11 @@ async def restart(e):
             pass
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
+
+        
+        
+        
+        
         
  ###___-----     
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
