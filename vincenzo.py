@@ -1488,7 +1488,7 @@ async def ping(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
-        text = "sucessfully restarted....\n\nPlease wait till it reboots..."
+        text = "**RESTARTED SUCCESSFULLY**\n\nPlease wait till it reboots..."
         await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await idk.disconnect()
