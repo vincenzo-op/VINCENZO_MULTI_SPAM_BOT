@@ -1482,7 +1482,7 @@ async def ping(e):
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-async def ___(e):
+#async def ___(e):
     usage = "restarts bot... type .restart"
     if e.sender_id in SMEX_USERS:
         text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
@@ -1561,14 +1561,14 @@ async def ___(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = " **welcome to the bot help menu**\n\n __BASIC COMMANDS__:\n.ping\n.restart\n\n__USER COMMANDS__:\n.bio\n.join\n.pjoin\n.leave\n\n__SPAM COMMANDS__:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = " **welcome to the bot help menu**\n\n __BASIC COMMANDS__:\n.ping\n.alive\n.restart\n\n__USER COMMANDS__:\n.bio\n.join\n.pjoin\n.leave\n\n__SPAM COMMANDS__:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
 
     
         
-text = """🇧 🇴 🇹   🇩 🇪 🇵 🇱 🇴 🇾 🇪 🇩   🇸 🇺 🇨 🇨 🇪 🇸 🇸 🇫 🇺 🇱 🇱 🇾 🔰🔰🔰......C༙O༙N༙T༙A༙C༙T༙- @koii_nhi_apnaa I͒N͒ T͒G͒ F͒O͒R͒ H͒E͒L͒P͒...."""
+text = """🇧 🇴 🇹   🇩 🇪 🇵 🇱 🇴 🇾 🇪 🇩   🇸 🇺 🇨 🇨 🇪 🇸 🇸 🇫 🇺 🇱 🇱 🇾 🔰🔰🔰......C༙O༙N༙T༙A༙C༙T༙- @vincenzo_official I͒N͒ T͒G͒ F͒O͒R͒ H͒E͒L͒P͒...."""
 
 print(text)
 print("")
