@@ -15,8 +15,8 @@
       },
       "ALIVE_PIC": {
         "description": "fill telegrpah media of your alive pic"
-        "value" : "https://telegra.ph/file/744ec1f5f15768fd3cc0b.jpg"
-        "required" : false
+        "value": "https://telegra.ph/file/744ec1f5f15768fd3cc0b.jpg"
+        "required": false
       "SUDO": {
         "description": "Sudo Users Id",
         "value": "1923131088",
