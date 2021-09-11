@@ -13,7 +13,8 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID, RRAID
-
+import git
+import heroku3
 
 
 
@@ -1455,11 +1456,8 @@ async def ping(e):
         end = datetime.now()
         ms = (end-start).microseconds / 1000
         await event.edit(f"🇵 🇴 🇳 🇬 !\n`{ms}` 🔰🔰\n ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ⎝╰‿╯⎠ "
-###vincenzo_op
-##  kang with credits else mc,bc and gay                       
-
-# _______
-
+                         
+                         
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -1534,10 +1532,7 @@ async def restart(e):
 
         
         
-        
-        
-        
- ###___-----     
+         
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
