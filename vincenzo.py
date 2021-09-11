@@ -779,7 +779,57 @@ async def _(e):
                 await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
-            
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.purge"))
+async def purge(event):
+ if event.sender_id in SMEX_USERS:
+   start = time.perf_counter()
+   reply_msg = await event.get_reply_message()
+   if not reply_msg:
+       await event.reply(
+            "`Reply to a message to select where to start purging from.`")
+       return
+   messages = []
+   message_id = reply_msg.id
+   delete_to = event.message.id
+   messages.append(event.reply_to_msg_id)
+   for msg_id in range(message_id, delete_to + 1):
+        messages.append(msg_id)
+        if len(messages) == 100:
+            await event.client.delete_messages(event.chat_id, messages)
+            messages = []
+   await event.client.delete_messages(event.chat_id, messages)
+   time_ = time.perf_counter() - start
+   text = f"🎉🎉 `Purge completed` `in {time_:0.2f} seconds`"
+   #hdgs = await event.respond(text, parse_mode='markdown')
+   await event.delete()
+   sleep(1)
+   #await hdgs.delete()
+   await event.delete()           
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
