@@ -1482,10 +1482,10 @@ async def ping(e):
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-  async def restart(e):
-      if e.sender_id in SMEX_USERS:
-      text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
-      await e.reply(text, parse_mode=None, link_preview=None )
+async def restart(e):
+    if e.sender_id in SMEX_USERS:
+        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
+        await e.reply(text, parse_mode=None, link_preview=None )
         try:
             await idk.disconnect()
         except Exception as e:
@@ -1529,9 +1529,8 @@ async def ping(e):
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
 
-        
-        
-         
+
+
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
