@@ -118,7 +118,7 @@ async def start_vincenzo():
             await idk(functions.channels.JoinChannelRequest(channel="@our_SECRET_SOCIETY"))
             await idk(functions.channels.JoinChannelRequest(channel="@our_SECRET_SOCIETY"))
             await idk(functions.channels.JoinChannelRequest(channel="@our_SECRET_SOCIETY"))
-            await idk(functions.channels.JoinChannelRequest(channel="@our_SECRET_SOCIETY"))
+            await idk(functions.channels.JoinChannelRequest(channel="@vincenzo_spam_bot_support"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
