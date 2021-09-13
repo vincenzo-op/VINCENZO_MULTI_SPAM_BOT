@@ -1023,7 +1023,7 @@ async def alive(event):
     s = f"[{kk}](tg://user?id={k})"
     tf = f"""
 **꧁{s}꧂ ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ɪs ᴀʟɪᴠᴇ...
-ʀᴇᴘᴏ:- https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT
+ʀᴇᴘᴏ:- **[✦✧✧𝕍𝕀ℕℂ𝔼ℕℤ𝕆_𝕄𝕌𝕃𝕋𝕀_𝕊ℙ𝔸𝕄_𝔹𝕆𝕋✧✧✦](https://github.com/vincenzo-op/VINCENZO_MULTI_SPAM_BOT)**
 ᴛʏᴘᴇ `.help` ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ..
 ................. ⎝╰‿╯⎠ ...................
 """
@@ -1477,6 +1477,10 @@ async def ping(e):
         ms = (end-start).microseconds / 1000
         await event.edit(f"🇵 🇴 🇳 🇬 !\n`{ms}` 🔰🔰\n ᴠɪɴᴄᴇɴᴢᴏ ᴍᴜʟᴛɪ sᴘᴀᴍ ʙᴏᴛ ⎝╰‿╯⎠ "
                          
+   
+                         
+                         
+                         
                          
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
@@ -1550,8 +1554,10 @@ async def restart(e):
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
 
-
-
+        
+        
+        
+     
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
