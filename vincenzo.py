@@ -1483,79 +1483,7 @@ async def ping(e):
                         
 # _______
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-async def restart(e):   
-    if e.sender_id in SMEX_USERS:
-        text = "𝙍𝙚𝙨𝙩𝙖𝙧𝙩𝙚𝙙\n\nPlease wait till it reboots..."
-        await e.reply(text, parse_mode=None, link_preview=None )                 
-        try:
-            await idk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await ydk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await wdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await hdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await sdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await adk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await bdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await cdk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await ddk.disconnect()
-        except Exception as e:
-            pass
-        try:
-            await edk.disconnect()
-        except Exception as e:
-            pass
-        os.execl(sys.executable, sys.executable, *sys.argv)
-        quit()
 
-        
         
         
      
