@@ -1485,38 +1485,6 @@ async def ping(e):
 
 
         
-        
-     
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-
-async def help(e):
-    if e.sender_id in SMEX_USERS:
-       text = " **welcome to the bot help menu**\n\n __BASIC COMMANDS__:\n.ping\n.alive\n.restart\n\n__USER COMMANDS__:\n.bio\n.join\n.pjoin\n.leave\n\n__SPAM COMMANDS__:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
-       await e.reply(text, parse_mode=None, link_preview=None )
 
         
 
